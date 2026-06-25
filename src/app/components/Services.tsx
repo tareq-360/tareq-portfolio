@@ -19,8 +19,8 @@ export default function Services() {
         {services.map((srv, idx) => (
           <div key={idx} className="bg-gray-900/30 border border-gray-800/80 rounded-xl p-5 hover:border-purple-500/40 transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-4">
-              <div className="w-10 h-10 rounded-lg bg-blue-600/10 flex items-center justify-center border border-blue-500/20 group-hover:bg-blue-600/20 transition-colors">
-                <srv.icon className="text-blue-400" size={20} />
+              <div className=" text-blue-500 w-10 h-10 rounded-lg bg-blue-600/10 flex items-center justify-center border border-blue-500/20 group-hover:bg-blue-600/20 transition-colors">
+                <srv.icon size={20} />
               </div>
               <h3 className="font-bold text-white text-base tracking-wide">{srv.title}</h3>
               <p className="text-xs text-gray-400 leading-relaxed">{srv.desc}</p>
