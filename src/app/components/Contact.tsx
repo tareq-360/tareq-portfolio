@@ -3,10 +3,10 @@ import { Mail, Phone, MapPin, MessageSquare, Send } from "lucide-react";
 
 export default function Contact() {
   const contactInfo = [
-    { icon: Mail, title: "Email", info: "mdtareq@example.com" },
-    { icon: Phone, title: "Phone", info: "+880 1234-567890" },
+    { icon: Mail, title: "Email", info: "mdtareqhossain2002@gmail.com" },
+    { icon: Phone, title: "Phone", info: "+880 1843341290" },
     { icon: MapPin, title: "Location", info: "Dhaka, Bangladesh" },
-    { icon: MessageSquare, title: "WhatsApp", info: "+880 1234-567890" }
+    { icon: MessageSquare, title: "WhatsApp", info: "+880 1857466794" }
   ];
 
   return (

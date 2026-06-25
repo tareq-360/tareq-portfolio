@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 export default function Navbar() {
   return (
     <header className="sticky top-0  z-50 backdrop-blur-md bg-[#03030d]/70 border-b border-gray-800/40">
@@ -13,7 +14,7 @@ export default function Navbar() {
             </a>
           </div>
           <div className="flex-none hidden md:flex items-center gap-8 text-sm font-medium">
-            <a href="#home" className="text-blue-500 transition-colors">Home</a>
+            <Link href="#" className="text-blue-500 transition-colors">Home</Link>
             <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
             <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
             <a href="#services" className="hover:text-blue-400 transition-colors">Services</a>

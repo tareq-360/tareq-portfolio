@@ -5,8 +5,8 @@ export default function Experience() {
   const timeline = [
     { year: "2026 - Present", role: "Freelance Web Developer", comp: "Working on multiple web development projects for clients worldwide." },
     { year: "2025", role: "CCTV & Security System Engineer", comp: "Installed and managed CCTV systems for businesses and residential clients." },
-    { year: "2024", role: "B.Sc in Computer Engineering", comp: "Completed B.Sc in Computer Engineering from a reputed university." },
-    { year: "2020", role: "HSC (Science)", comp: "Higher Secondary Certificate in Science." }
+    { year: "2024", role: "Diploma in engineering in Computer science and Technology", comp: "Completed Diploma in engineering in Computer science and Technology from a reputed Technical Collage." },
+    { year: "2020", role: "SSC ", comp: " Secondary School Certificate ." }
   ];
 
   return (

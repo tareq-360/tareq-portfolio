@@ -12,11 +12,11 @@ export default function About() {
             I am a Computer Engineer with expertise in Web Development, Hardware, Networking, and CCTV Surveillance Systems. I enjoy building scalable web applications and solving real-world technical problems.
           </p>
           <ul className="space-y-3 text-sm text-gray-300">
-            <li className="flex items-center gap-3"><span className="text-blue-500">✓</span> B.Sc in Computer Engineering</li>
+            <li className="flex items-center gap-3"><span className="text-blue-500">✓</span> Diploma in engineering in Computer science and Technology</li>
             <li className="flex items-center gap-3"><span className="text-blue-500">✓</span> 5+ Projects Completed</li>
             <li className="flex items-center gap-3"><span className="text-blue-500">✓</span> Strong problem solving and analytical skills</li>
           </ul>
-          <button className="btn btn-sm btn-primary bg-blue-600 border-none text-white rounded-sm mt-2">Read More About Me</button>
+          <button className="btn btn-sm btn-primary p-2 bg-blue-600 border-none text-white rounded-sm mt-2">Read More About Me</button>
         </div>
         
         <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
