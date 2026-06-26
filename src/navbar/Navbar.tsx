@@ -6,8 +6,8 @@ export default function Navbar() {
     <header className="sticky top-0  z-50 backdrop-blur-md bg-[#03030d]/70 border-b border-gray-800/40">
       <div className="navbar max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className=" flex justify-between">
-          <div className="">
+        <div className=" flex ">
+          <div className="flex-1">
             <a href="#" className="text-2xl font-black tracking-wider text-white">
               <Image src="/logo.png" alt="" width="100" height="20"></Image>
               {/* MD<span className="text-blue-500">.</span> */}
@@ -22,7 +22,7 @@ export default function Navbar() {
             <Link href="/components/experience" className="hover:text-blue-400 transition-colors">Experience</Link>
             <Link href="/components/contact" className="hover:text-blue-400 transition-colors">Contact</Link>
           </div>
-          <div className="  flex items-center">
+          <div className="  flex flex-1 items-center">
             <button className="btn btn-sm btn-primary bg-blue-600 hover:bg-blue-700 border-none rounded-md px-5 text-white normal-case">
             Hire Me
           </button>
