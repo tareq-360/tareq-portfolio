@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "../navbar/Navbar";
+import navbar from "../navbar/Navbar"
+import Footer from "./components/footer/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,8 +32,18 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Navbar></Navbar>
-        {children}
-        </body>
+        <div className="min-h-screen bg-[#03030d] text-gray-200 font-sans selection:bg-purple-500 selection:text-white overflow-x-hidden relative">
+          {/* Decorative Background Glows */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[800px] pointer-events-none overflow-hidden z-0">
+            <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px]" />
+            <div className="absolute top-[20%] left-[-10%] w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[150px]" />
+          </div>
+          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-32 py-12">
+            {children}
+          </main>
+          <Footer></Footer>
+        </div>
+      </body>
     </html>
   );
 }

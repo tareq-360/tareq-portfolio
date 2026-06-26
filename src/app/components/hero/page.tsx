@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFacebook, FaTwitter, FaYoutube, FaLaptopCode } from "react-icons/fa";
@@ -7,7 +8,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="home" className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-100px)]">
+    <section id="home" className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[calc(100dvh-100px)]">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -62,12 +63,12 @@ export default function Hero() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, x: 30 }}
-        animate={{ opacity: 1, y: 20 }}
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
         className="space-y-6"
       >
-        <div className="relative flex justify-center items-center">
+        <div className="relative flex justify-center items-center py-12 lg:py-0">
           <div className="w-72 h-72 sm:w-96 sm:h-96 rounded-full border-2 border-dashed border-blue-500/20 animate-[spin_60s_linear_infinite] absolute" />
           <div className="w-60 h-60 sm:w-80 sm:h-80 rounded-full border border-purple-500/30 animate-[spin_30s_linear_infinite] absolute flex justify-center items-center" />
           <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full bg-gradient-to-tr from-blue-600/20 to-purple-600/20 flex items-center justify-center overflow-hidden border border-white/10 backdrop-blur-sm">

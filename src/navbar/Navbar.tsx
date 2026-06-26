@@ -14,13 +14,13 @@ export default function Navbar() {
             </a>
           </div>
           <div className="flex-none hidden md:flex items-center gap-8 text-sm font-medium">
-            <Link href="#" className="text-blue-500 transition-colors">Home</Link>
-            <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
-            <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
-            <a href="#services" className="hover:text-blue-400 transition-colors">Services</a>
-            <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
-            <a href="#experience" className="hover:text-blue-400 transition-colors">Experience</a>
-            <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
+            <Link href="/" className="text-blue-500 transition-colors">Home</Link>
+            <Link href="/components/about" className="hover:text-blue-400 transition-colors">About</Link>
+            <Link href="/components/skill" className="hover:text-blue-400 transition-colors">Skills</Link>
+            <Link href="/components/service" className="hover:text-blue-400 transition-colors">Services</Link>
+            <Link href="/components/project" className="hover:text-blue-400 transition-colors">Projects</Link>
+            <Link href="/components/experience" className="hover:text-blue-400 transition-colors">Experience</Link>
+            <Link href="/components/contact" className="hover:text-blue-400 transition-colors">Contact</Link>
           </div>
           <div className="  flex items-center">
             <button className="btn btn-sm btn-primary bg-blue-600 hover:bg-blue-700 border-none rounded-md px-5 text-white normal-case">

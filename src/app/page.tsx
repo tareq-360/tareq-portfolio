@@ -1,18 +1,20 @@
 
 "use client";
 
-import Navbar from "@/app/components/Navbar";
-import Hero from "@/app/components/Hero";
-import About from "@/app/components/About";
-import Skills from "@/app/components/Skills";
-import Services from "@/app/components/Services";
-import Projects from "@/app/components/Projects";
-import Experience from "@/app/components/Experience";
-import Contact from "@/app/components/Contact";
-import Footer from "@/app/components/Footer";
+import Navbar from "@/navbar/Navbar";
+import Hero from "@/app/components/hero/page";
+import About from "@/app/components/about/page";
+import Skills from "@/app/components/skill/page";
+import Services from "@/app/components/service/page";
+import Projects from "@/app/components/project/page";
+import Experience from "@/app/components/experience/page";
+// import Contact from "@/app/components/contact/page";
+import Footer from "@/app/components/footer/page";
+import Contact from "./components/contact/page";
 
 export default function Home() {
   return (
+  
     <div className="min-h-screen bg-[#03030d] text-gray-200 font-sans selection:bg-purple-500 selection:text-white overflow-x-hidden relative">
       {/* Decorative Background Glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[800px] pointer-events-none overflow-hidden z-0">
@@ -29,12 +31,12 @@ export default function Home() {
         <Services />
         <Projects />
         <Experience />
-        
-        <Contact />
+        <Skills></Skills>
+        <Contact></Contact>
         
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
